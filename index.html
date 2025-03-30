@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Guard - Dental Insurance Verification for Providers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+                    <span class="logo-text">Smile<span class="highlight">Guard</span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="eligibility.html" class="active">Eligibility</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Claims</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <div class="auth-buttons">
+                        <button class="btn btn-outline" onclick="window.location.href='signup.html'">Sign Up</button>
+                        <button class="btn btn-primary" onclick="window.location.href='login.html'">Login</button>
+                    </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Streamline Insurance Verification for Your Dental Practice</h1>
+                    <p>SmileGuard provides real-time eligibility verification for Delta Dental NJ and Cigna plans. Save time, reduce claim denials, and improve your patient experience.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large">Get Started</button>
+                        <button class="btn btn-outline btn-large">Watch Demo</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/api/placeholder/500/400" alt="Dental practice management software" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Tools for Dental Practices</h2>
+                <p>SmileGuard delivers everything you need to verify insurance eligibility efficiently</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-search"></i></div>
+                    <h3>Real-Time Verification</h3>
+                    <p>Instantly verify patient eligibility with Delta Dental NJ and Cigna plans.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Benefits Breakdown</h3>
+                    <p>View detailed coverage information including deductibles and maximums.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Service History</h3>
+                    <p>Check frequency limitations and previously rendered services.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Preauthorization</h3>
+                    <p>Submit and track preauthorization requests electronically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eligibility-check">
+        <div class="container">
+            <div class="eligibility-form-container">
+                <div class="form-header">
+                    <h2>Quick Eligibility Check</h2>
+                    <p>Verify patient insurance in seconds</p>
+                </div>
+                <form id="eligibilityForm" class="eligibility-form">
+                    <div class="form-group">
+                        <label for="insuranceProvider">Insurance Provider</label>
+                        <select id="insuranceProvider" required>
+                            <option value="" disabled selected>Select Provider</option>
+                            <option value="delta">Delta Dental NJ</option>
+                            <option value="cigna">Cigna Dental</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="subscriberId">Subscriber ID</label>
+                            <input type="text" id="subscriberId" placeholder="Enter Subscriber ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="groupNumber">Group Number</label>
+                            <input type="text" id="groupNumber" placeholder="Enter Group Number">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="patientDOB">Patient DOB</label>
+                            <input type="date" id="patientDOB" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceDate">Service Date</label>
+                            <input type="date" id="serviceDate" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Verify Eligibility</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Dental Professionals</h2>
+                <p>See what dentists are saying about SmileGuard</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"SmileGuard has completely transformed our verification process. We've cut administrative time by 70% and reduced claim denials significantly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Dr. Smith" class="testimonial-avatar">
+                        <div class="author-info">
+                            <h4>Dr. Jennifer Smith</h4>
+                            <p>Smith Family Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The real-time eligibility checks and benefits breakdown features have been game-changers for our practice. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Dr. Johnson" class="testimonial-avatar">
+                        <div class="author-info">
+                            <h4>Dr. Michael Johnson</h4>
+                            <p>Bright Smile Dental Group</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that works best for your practice</p>
+            </div>
+            <div class="pricing-plans">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic</h3>
+                        <p class="price">$99<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Real-time eligibility verification</li>
+                        <li><i class="fas fa-check"></i> Basic benefits information</li>
+                        <li><i class="fas fa-check"></i> Up to 200 verifications per month</li>
+                        <li><i class="fas fa-check"></i> Email support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Preauthorization tools</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Practice management integration</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block">Select Plan</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <div class="popular-tag">Most Popular</div>
+                        <h3>Professional</h3>
+                        <p class="price">$199<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Real-time eligibility verification</li>
+                        <li><i class="fas fa-check"></i> Comprehensive benefits breakdown</li>
+                        <li><i class="fas fa-check"></i> Unlimited verifications</li>
+                        <li><i class="fas fa-check"></i> Priority phone & email support</li>
+                        <li><i class="fas fa-check"></i> Preauthorization tools</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Practice management integration</li>
+                    </ul>
+                    <button class="btn btn-primary btn-block">Select Plan</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <p class="price">$349<span>/month</span></p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Real-time eligibility verification</li>
+                        <li><i class="fas fa-check"></i> Comprehensive benefits breakdown</li>
+                        <li><i class="fas fa-check"></i> Unlimited verifications</li>
+                        <li><i class="fas fa-check"></i> 24/7 premium support</li>
+                        <li><i class="fas fa-check"></i> Preauthorization tools</li>
+                        <li><i class="fas fa-check"></i> Practice management integration</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block">Select Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to transform your dental practice?</h2>
+                <p>Join thousands of dentists who trust SmileGuard for their insurance verification needs.</p>
+                <button class="btn btn-light btn-large">Schedule a Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+                        <span class="logo-text">Smile<span class="highlight">Guard</span></span>
+                    </div>
+                    <p>Simplifying dental insurance verification for modern practices.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Integrations</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">Webinars</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmileGuard. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="eligibilityResultModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Eligibility Results</h2>
+            </div>
+            <div class="modal-body" id="eligibilityResults">
+                <!-- Results will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

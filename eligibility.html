@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedure Eligibility - SmileGuard</title>
+    <link rel="stylesheet" href="eligibility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+    </header>
+
+    <section class="procedure-search">
+        <div class="container">
+            <div class="section-header">
+                <h2>Procedure Code Eligibility Check</h2>
+                <p>Verify coverage details for specific dental procedure codes</p>
+            </div>
+            
+            <div class="search-container">
+                <form id="procedureForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="procedureCode">Procedure Code (e.g., D0120)</label>
+                            <input type="text" id="procedureCode" placeholder="Enter ADA code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="insuranceProvider">Insurance Provider</label>
+                            <select id="insuranceProvider" required>
+                                <option value="both">Both Providers</option>
+                                <option value="delta">Delta Dental NJ</option>
+                                <option value="cigna">Cigna Dental</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Check Coverage</button>
+                </form>
+            </div>
+
+            <div id="coverageResults" class="coverage-results"></div>
+        </div>
+    </section>
+
+    <script src="eligibility.js"></script>
+</body>
+</html>
